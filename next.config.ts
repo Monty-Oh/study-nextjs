@@ -1,7 +1,10 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+    experimental: {
+        //  특정 경로에 PPR을 사용
+        ppr: 'incremental'
+    }
 };
 
 export default nextConfig;
